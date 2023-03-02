@@ -40,7 +40,7 @@ Registro de un nuevo usuario en una plataforma web.
 
 ```
 
-<img src="images\image-20210125143347879.png" alt="image-20210125143347879" style="zoom:150%;" />
+<img src="images\image-20210125143347879.png" alt="image-20210125143347879" style="zoom:100%;" />
 
 ```scss
 La forma correcta de hacerlo según RPC, sería "mover todo el código de encriptación a su propia clase". Para que de esta forma el comportamiento quede "ENCAPSULADO" 
@@ -48,9 +48,9 @@ La forma correcta de hacerlo según RPC, sería "mover todo el código de encrip
 // (Facilitando el cambio del algoritmo de encripción en el futuro, en un solo lugar)
 ```
 
-![image-20210115181525325](images\image-20210115181525325.png)
+<img src="images\image-20210115181525325.png" alt="image-20210115181525325" style="zoom:100%;" />
 
-![image-20210115181543965](images\image-20210115181543965.png)
+<img src="images\image-20210115181543965.png" alt="image-20210115181543965" style="zoom:100%;" />
 
 ```scss
 // La clase Usuario (UserRegistry) DELEGA a la clase de Encriptado (PasswordEncrypter) la responsabilidad que ella no puede asumir.
@@ -71,24 +71,24 @@ O -> Open Closed Principle - Principio Abierto Cerrado
 Supongamos que tenemos un clase que define rectangulos
 ```
 
-![image-20210115182448774](images\image-20210115182448774.png)
+<img src="images\image-20210115182448774.png" alt="image-20210115182448774" style="zoom:100%;" />
 
-![image-20210115182604372](images\image-20210115182604372.png)
+<img src="images\image-20210115182604372.png" alt="image-20210115182604372" style="zoom:100%;" />
 
 ```scss
 Esto funciona perfectamente, pero que pase si queremos que calcule areas de triangulos ????
 // TENDRIAMOS QUE MODIFCIAR NUESTRA CLASE PARA TENER EN CUENTA EL AREA DEL TRIANGULO ?????
 ```
 
-![image-20210115182830178](images\image-20210115182830178.png)
+<img src="images\image-20210115182830178.png" alt="image-20210115182830178" style="zoom:100%;" />
 
 ```scss
 Y esto nos pasara cada vez que querramos añadir funcionalidades. "Nuestra clase esta abierta para su MODIFICACION por lo que no estamos cumpliendo el segundo principio SOLID". Por lo que hay peligro de agregar bugs cada vez que querremos añadir nueva funcionalidad. "La forma correcta de hacerlo sería utiliza POLIMORFISMO en este caso"
 ```
 
-![image-20210115183141654](images\image-20210115183141654.png)
+<img src="images\image-20210115183141654.png" alt="image-20210115183141654" style="zoom:100%;" />
 
-![image-20210115183402093](images\image-20210115183402093.png)
+<img src="images\image-20210115183402093.png" alt="image-20210115183402093" style="zoom:100%;" />
 
 ```scss
 "El anterior es un modelo mas ROBUSTO y MAS FACIL de extender."
@@ -107,9 +107,9 @@ Basicamente lo que nos dice este principio es que "toda clase que es hija de otr
 // Un Pato de Goma Nada, Hace cuack pero no Vuela. Si devolvemos ERROR al volar ESTAMOS VIOLANDO EL PRINCIPIO DE SUSTITUCIÓN. Ya que el sistema se comportara diferente si estamos frente a un pato de goma o ante un pato convencional
 ```
 
-![image-20210115183924836](images\image-20210115183924836.png)
+<img src="images\image-20210115183924836.png" alt="image-20210115183924836" style="zoom:100%;" />
 
-![image-20210115184230919](images\image-20210115184230919.png)
+<img src="images\image-20210115184230919.png" alt="image-20210115184230919" style="zoom:100%;" />
 
 ```scss
 "SOLUCION CORRECTA SIN VIOLAR EL PRINCIPIO 3" 
@@ -118,9 +118,9 @@ Basicamente lo que nos dice este principio es que "toda clase que es hija de otr
 De esta manera cada tipo de pato implementa las operaciones que necesite.
 ```
 
-![image-20210115184335775](images\image-20210115184335775.png)
+<img src="images\image-20210115184335775.png" alt="image-20210115184335775" style="zoom:100%;" />
 
-![image-20210115184549053](images\image-20210115184549053.png)
+<img src="images\image-20210115184549053.png" alt="image-20210115184549053" style="zoom:100%;" />
 
 ```properties
 ----------------------------------------------------------------------------
@@ -148,6 +148,6 @@ D -> Dependency Inversion Principle - Principio de inversión de la dependencia
 "No depender si nuestra Base de Datos" utiliza una "tecnología u otra". Porque nuestro código no depende de ninguna forma de que BD utilizamos. Si no de una abstracción que hemos construido en el medio.
 ```
 
-![image-20210115185510772](images\image-20210115185510772.png)
+<img src="images\image-20210115185510772.png" alt="image-20210115185510772" style="zoom:100%;" />
 
-![image-20210115185540937](images\image-20210115185540937.png)
+<img src="images\image-20210115185540937.png" alt="image-20210115185540937" style="zoom:100%;" />
